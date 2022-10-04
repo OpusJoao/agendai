@@ -1,15 +1,11 @@
 import React from "react";
-import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { NavigationContainer } from "@react-navigation/native";
 import SelectDate from "./src/components/SelectDate";
 import SelectHour from "./src/components/SelectHour";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-
 import Icon from "react-native-vector-icons/FontAwesome";
-import Home from "./src/components/Home";
+import HomeScreen from "./src/components/Home";
 
-
-const Stack = createNativeStackNavigator()
 const Tab = createBottomTabNavigator()
 
 const App = () => {
@@ -29,7 +25,6 @@ const App = () => {
               }else if(route.name === 'Settings'){
                 icon = <Icon name="sliders" size={24} color={color} />
               }
-              
 
               return icon 
             },
@@ -39,7 +34,7 @@ const App = () => {
         >
           <Tab.Screen
             name="Home"
-            component={Home}
+            component={HomeScreen}
           />
           <Tab.Screen
             name="Today"
