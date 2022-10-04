@@ -14,6 +14,7 @@ const Duration = styled.Text`
   font-size: 11px;
   font-weight: bold;
   color: #7D7D7D;
+  text-transform: uppercase;
 `
 
 const Title = styled.Text`
