@@ -1,14 +1,14 @@
 import { View, TouchableOpacity, Text } from "react-native";
 import { Card, Duration, Title, Time, LineTop, Line, LinkContainer } from "./styles";
 
-export default function CreatedMeeting() {
+export default function CreatedMeeting({duration = '', title = '', time = ''}) {
   return (
     <Card>
       <View style={{ padding: 8 }}>
         <LineTop />
-        <Duration>30 MIN</Duration>
-        <Title>Reunião de 30 minutos com o Pedro</Title>
-        <Time>01/10/2022 12:30 - 13:00</Time>
+        <Duration>{duration}</Duration>
+        <Title>{title}</Title>
+        <Time>{time}</Time>
       </View>
       <Line />
       <LinkContainer>
