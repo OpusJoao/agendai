@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "angendai",
-    "slug": "angendai",
+    "name": "agendai",
+    "slug": "agendai",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"

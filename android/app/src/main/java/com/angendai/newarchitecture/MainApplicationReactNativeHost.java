@@ -1,4 +1,4 @@
-package com.angendai.newarchitecture;
+package com.agendai.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -20,9 +20,9 @@ import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.angendai.BuildConfig;
-import com.angendai.newarchitecture.components.MainComponentsRegistry;
-import com.angendai.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.agendai.BuildConfig;
+import com.agendai.newarchitecture.components.MainComponentsRegistry;
+import com.agendai.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

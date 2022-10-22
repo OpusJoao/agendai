@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "angendai.app"
-               BlueprintName = "angendai"
-               ReferencedContainer = "container:angendai.xcodeproj">
+               BuildableName = "agendai.app"
+               BlueprintName = "agendai"
+               ReferencedContainer = "container:agendai.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "angendaiTests.xctest"
-               BlueprintName = "angendaiTests"
-               ReferencedContainer = "container:angendai.xcodeproj">
+               BuildableName = "agendaiTests.xctest"
+               BlueprintName = "agendaiTests"
+               ReferencedContainer = "container:agendai.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "angendai.app"
-            BlueprintName = "angendai"
-            ReferencedContainer = "container:angendai.xcodeproj">
+            BuildableName = "agendai.app"
+            BlueprintName = "agendai"
+            ReferencedContainer = "container:agendai.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "angendai.app"
-            BlueprintName = "angendai"
-            ReferencedContainer = "container:angendai.xcodeproj">
+            BuildableName = "agendai.app"
+            BlueprintName = "agendai"
+            ReferencedContainer = "container:agendai.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
