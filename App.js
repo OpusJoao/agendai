@@ -1,10 +1,10 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import SelectDate from "./src/components/SelectDate";
-import SelectHour from "./src/components/SelectHour";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Icon from "react-native-vector-icons/FontAwesome";
-import HomeScreen from "./src/components/Home";
+import HomeScreen from "./src/screens/Home";
+import TodayScreen from "./src/screens/Today";
 
 const Tab = createBottomTabNavigator()
 
@@ -38,7 +38,7 @@ const App = () => {
           />
           <Tab.Screen
             name="Today"
-            component={SelectHour}
+            component={TodayScreen}
           />
           <Tab.Screen
             name="Settings"
