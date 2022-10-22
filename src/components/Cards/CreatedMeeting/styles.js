@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Card = styled.View`
   overflow: hidden;
   width: 100%;
-  height: 124px;
+  height: auto;
   background-color: #fff;
   border-radius: 14px;
   margin-bottom: 16px;
