@@ -1,9 +1,9 @@
 import { ScrollView, Text, View } from "react-native";
-import Header from "../Header";
-import CreatedMeeting from "../Cards/CreatedMeeting";
-import CreateMeetingButton from "../Buttons/CreateMeetingButton";
+import Header from "../../components/Header";
+import CreatedMeeting from "../../components/Cards/CreatedMeeting";
+import CreateMeetingButton from "../../components/Buttons/CreateMeetingButton";
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import SelectDate from "../SelectDate";
+import SelectDate from "../../components/SelectDate";
 
 const Stack = createNativeStackNavigator()
 
@@ -34,7 +34,7 @@ export default function HomeScreen() {
       initialRouteName="HomeScreen"
     >
       <Stack.Screen name="HomeScreen" component={Home} options={{headerShown: false}}/>
-      <Stack.Screen name="SelectDateScreen" component={SelectDate}/>
+      <Stack.Screen name="SelectDateScreen" component={SelectDate} options={{headerTitle: ""}}/>
     </Stack.Navigator>
     
   )
