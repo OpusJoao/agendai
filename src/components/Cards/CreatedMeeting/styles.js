@@ -46,7 +46,7 @@ const LinkContainer = styled.View`
   margin-right: 4px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 `
 
