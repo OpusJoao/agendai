@@ -16,7 +16,7 @@ function Today(props){
   <View>
     <CreateMeetingButton onPress={handleCreateMettingOnPress}/>
     <ScrollView style={{minHeight:"100%"}}>
-      <Header />
+      <Header lessContent={true}/>
       <View style={{ paddingHorizontal: 16, marginBottom: 16 }}>
         <Text style={{ fontWeight: 'bold', color: '#5E5E5E' }}>Reuniões criadas</Text>
       </View>
