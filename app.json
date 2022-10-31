@@ -6,6 +6,11 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "userInterfaceStyle": "automatic"
+    "userInterfaceStyle": "automatic",
+    "extra": {
+      "eas": {
+        "projectId": "176bfe50-da31-4aa7-920d-5f92a7808c17"
+      }
+    }
   }
 }

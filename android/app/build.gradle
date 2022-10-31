@@ -3,8 +3,6 @@ apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
 
 import com.android.build.OutputFile
 import org.apache.tools.ant.taskdefs.condition.Os
-renderscriptTargetApi 18
-renderscriptSupportModeEnabled true
 
 /**
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
