@@ -7,6 +7,7 @@ const CardBody = styled.View`
   background-color: #fff;
   border-radius: 14px;
   margin-bottom: 16px;
+  elevation: 2;
 `
 
 const Duration = styled.Text`
@@ -20,7 +21,7 @@ const Duration = styled.Text`
 const Title = styled.Text`
   margin-bottom: 4px;
   font-weight: bold;
-  font-size: 14;
+  font-size: 14 px;
 `
 
 const Time = styled.Text`

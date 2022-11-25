@@ -13,6 +13,7 @@ const App = () => {
   return (
       <NavigationContainer>
         <Tab.Navigator
+          sceneContainerStyle={{backgroundColor: '#fff'}}
           screenOptions={({route})=>({
             tabBarIcon: ({focused}) => {
               const color = focused ? '#FCA351': '#B7B7B7'
@@ -29,7 +30,8 @@ const App = () => {
               return icon 
             },
             tabBarShowLabel: false,
-            headerShown: false
+            headerShown: false,
+            
           })}
         >
           <Tab.Screen

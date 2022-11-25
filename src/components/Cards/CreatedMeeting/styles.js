@@ -20,7 +20,7 @@ const Duration = styled.Text`
 const Title = styled.Text`
   margin-bottom: 4px;
   font-weight: bold;
-  font-size: 14;
+  font-size: 14px;
 `
 
 const Time = styled.Text`

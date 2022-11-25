@@ -3,14 +3,16 @@ import Header from "../../components/Header";
 import CreatedMeeting from "../../components/Cards/CreatedMeeting";
 import CreateMeetingButton from "../../components/Buttons/CreateMeetingButton";
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import SelectDate from "../../components/SelectDate";
+import CreateMeetingScreen from "../CreateMeeting";
+import SelectHour from "../SelectHour";
+import SendMeeting from "../SendMeeting";
 
 
 const Stack = createNativeStackNavigator()
 
 function Today(props){
   function handleCreateMettingOnPress(){
-    props.navigation.push("SelectDateScreen")
+    props.navigation.push("CreateMeetingScreen")
   }
   return (
   <View>
@@ -35,7 +37,9 @@ export default function TodayScreen() {
       initialRouteName="TodayScreen"
     >
       <Stack.Screen name="TodayScreen" component={Today} options={{headerShown: false}}/>
-      <Stack.Screen name="SelectDateScreen" component={SelectDate}/>
+      <Stack.Screen name="CreateMeetingScreen" component={CreateMeetingScreen} options={{headerTitle: "Criar Reunião"}}/>
+      <Stack.Screen name="SelectHourScreen" component={SelectHour} options={{headerTitle: "Selecionar Horário"}}/>
+      <Stack.Screen name="SendMeetingScreen" component={SendMeeting} options={{headerTitle: "Enviar reunião"}}/>
     </Stack.Navigator>
     
   )
