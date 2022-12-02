@@ -9,7 +9,7 @@ import CardWithDropDown from "../../components/Cards/CardWithDropDown";
 export default function SelectHour(props){
     const commonHours = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
     const [date, setDate] = useState('');
-    const [timeDurationMeeting, setTimeDurationMeeting] = useState(5);
+    const [timeDurationMeeting, setTimeDurationMeeting] = useState(30);
     const optionsTimeMeeting = [
                     {value: 5, label: '5 min'},
                     {value: 10, label: '10 min'},
@@ -18,6 +18,7 @@ export default function SelectHour(props){
                     {value: 45, label: '45 min'},
                     {value: 60, label: '60 min'}
     ]
+    const [hoursAvailable, setHoursAvailable] = useState([]);
 
     const [cardSelectHours, setCardSelectHours] = useState([])
     
@@ -30,7 +31,14 @@ export default function SelectHour(props){
     }
 
     function handlePressNextButton(){
-        props.navigation.navigate("SendMeetingScreen")
+        const {date, nameMeeting} = props?.route?.params
+        props.navigation.navigate("SendMeetingScreen",{
+            date, 
+            nameMeeting,
+            timeDuration: timeDurationMeeting,
+            hoursAvailable: hoursAvailable
+
+        })
     }
 
     function changeExpandStatus(hour){
@@ -70,6 +78,7 @@ export default function SelectHour(props){
         generateSelectHours();
 
     }, [])
+
     return (
         <ScrollView style={{backgroundColor: '#fff', minHeight: '100%', padding: 16, }}>
             <CardWithBadge badgeText={date}>
@@ -84,6 +93,7 @@ export default function SelectHour(props){
                 expanded={cardSelectHour.expanded} 
                 key={cardSelectHour.hour}
                 onPressTitle={() => changeExpandStatus(cardSelectHour.hour)}
+                setHoursAvailable={setHoursAvailable}
                 />
             )}
             <NextButton onPress={handlePressNextButton}/>

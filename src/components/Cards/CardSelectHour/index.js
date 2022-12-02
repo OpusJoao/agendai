@@ -1,11 +1,10 @@
 import { ContainerBody, ContainerTitle, CustomCard, ExpandButton, TextTitle } from "./styles";
 import IconEntypo from 'react-native-vector-icons/Entypo';
-import { Text } from "react-native";
 import SelectHourButton from "../../Buttons/SelectHourButton";
 import { FlatList } from "react-native";
 import { useEffect, useState } from "react";
 
-export default function CardSelectHour({title, durationOfMeeting, InitialHour, expanded = false, onPressTitle = () => {}}){
+export default function CardSelectHour({title, durationOfMeeting, InitialHour, expanded = false, onPressTitle = () => {}, setHoursAvailable}){
     const colors = {
         withContent: "#FCA351",
         withNoContent: "#D9D9D9" 
@@ -27,6 +26,8 @@ export default function CardSelectHour({title, durationOfMeeting, InitialHour, e
         setHours({"hours": currentHours})
 
         setHasHourActive(hasAnyHourActive())
+
+        setHoursAvailable(currentHours.filter(hour => hour.selected == true))
     }
 
     function hasAnyHourActive(){

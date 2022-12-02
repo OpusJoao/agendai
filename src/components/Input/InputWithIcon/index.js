@@ -7,7 +7,7 @@ export default function InputWithIcon({icon, onChange, value, placeholder}){
                 <IconInput>
                     {!!icon ? icon: <Icon name="question-circle-o" size={16} color={'#FCA351'}/>}
                 </IconInput>
-                <InputIcon placeholder={placeholder} onChange={onChange} value={value}/>
+                <InputIcon placeholder={placeholder} onChange={text => onChange(text.nativeEvent.text)} value={value}/>
             </ContainerInput>
     )
 }

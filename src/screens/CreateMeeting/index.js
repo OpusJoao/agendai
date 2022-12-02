@@ -32,11 +32,11 @@ export default function CreateMeetingScreen(props){
     }
 
     function handlePressNextButton(){
-        props.navigation.navigate("SelectHourScreen", {date: day})
+        props.navigation.navigate("SelectHourScreen", {date: day, nameMeeting})
     }
     return (
     <View style={{backgroundColor: '#fff', height: '100%', padding: 16, justifyContent: 'space-between'}}>
-        <InputWithIcon icon={<Icon name="calendar-o" size={16} color={'#FCA351'}/>} onChange={handleOnChangeNameMeeting} value={nameMeeting} placeholder='Insira um título.'/>
+        <InputWithIcon icon={<Icon name="calendar-o" size={16} color={'#FCA351'}/>} onChange={text => handleOnChangeNameMeeting(text)} value={nameMeeting} placeholder='Insira um título.'/>
         <Card>
             <View style={{width: '100%', height: '65%'}}>
             <Calendar 
